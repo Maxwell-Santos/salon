@@ -8,7 +8,7 @@ type SwiperSlideComponentProps = {
 export function SwiperSlideComponent({ img, description, title }: SwiperSlideComponentProps) {
 
   return (
-    <div className="relative w-full h-[100vh] max-h-[700px]">
+    <div className="relative w-full h-[55vh] sm:h-[100vh] max-h-[700px]">
       <Image src={img} alt={"slide"} fill />
       <div className="slide-content">
         <h2 className="drop-shadow-sm">{title}</h2>

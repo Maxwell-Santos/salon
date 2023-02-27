@@ -44,7 +44,7 @@ export function WorkingHours() {
         </div>
       </div>
 
-      <div className="flex-1 max-w-[550px]">
+      <div className="flex-1 max-w-[550px] text-center sm:text-start">
         <h2 className="text-title">
           {working ? 'estamos abertos!' : 'fechados no momento...'}
         </h2>
@@ -73,7 +73,7 @@ export function WorkingHours() {
         </table>
 
         <button
-          className="bg-bg-primary hover:bg-button-primary text-contrast transition-all duration-300 mt-4">
+          className="w-full sm:w-fit bg-bg-primary hover:bg-button-primary text-contrast transition-all duration-300 mt-4">
           marcar
         </button>
       </div>

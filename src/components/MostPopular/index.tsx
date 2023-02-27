@@ -6,7 +6,7 @@ export function MostPopular() {
         <h2 className="w-full text-center md:text-end md:max-w-[300px] ml-auto">Serviços Populares</h2>
       </div>
 
-      <div className="flex-1 md:flex-[1.5] mx-auto w-full">
+      <div className="flex-1 md:flex-[1.5] flex flex-col items-center">
         <div className="container">
           <div className="container-header">
             <span>Extenção clássica</span>
@@ -51,7 +51,7 @@ export function MostPopular() {
           </div>
         </div>
         <button 
-          className="bg-bg-primary hover:bg-button-primary text-contrast transition-all duration-300 mt-4">
+          className="w-full sm:w-fit bg-bg-primary hover:bg-button-primary text-contrast transition-all duration-300 mt-4">
           marcar
         </button>
       </div>

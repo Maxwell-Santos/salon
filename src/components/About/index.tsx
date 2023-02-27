@@ -25,16 +25,13 @@ export function About() {
     <section className="bg-bg-primary text-contrast p-10">
 
       <div className="max-w-[1000px] w-full mx-auto flex flex-wrap items-center justify-center gap-10 pt-10 md:pt-20 md:gap-20">
-        <div className="md:max-w-[500px] w-full flex-1">
-          <h2 className="text-5xl md:text-7xl leading-normal text-center text-extrabold text-title">Salão conceito</h2>
-        </div>
 
         <div className="text-center flex-1 max-w-[500px] w-full">
-          <h2 className="text-contrast">Sobre nós</h2>
+          <h2 className="text-contrast">O que fazemos</h2>
           <p className="py-7 text-base sm:text-lg text-paragraph">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero quas maiores impedit fugit nesciunt, eos laudantium. Voluptatem consequatur, expedita dicta neque perferendis rerum non illum ab incidunt voluptates, dolorem culpa.
           </p>
-          <button className="hover:bg-button-primary hover:border-[#fbbaa1] border border-white transition-all">Veja mais</button>
+          <button className="w-full sm:w-fit hover:bg-button-primary hover:border-[#fbbaa1] border border-white transition-all">Veja mais</button>
         </div>
 
       </div>
