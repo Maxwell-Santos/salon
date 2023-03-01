@@ -17,7 +17,7 @@ export default function Home() {
       <Head>
         <title>Salão Conceito</title>
         <meta name="author" content="Maxwell Alves dos Santos" />
-        <meta name="description" content="Salão de beleza" />
+        <meta name="description" content="Portfólio do salão de beleza" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 

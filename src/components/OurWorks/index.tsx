@@ -3,8 +3,8 @@ import Image from "next/image";
 export function OurWorks() {
 
   return (
-   <section className="bg-bg-primary py-32">
-    <h2 className="text-contrast mb-10">Nosso trabalho</h2>
+   <section className="bg-bg-primary pb-28 px-3">
+    <h2 className="text-contrast mb-10 text-center">Nosso trabalho</h2>
 
     <div className="grid grid-rows-[7] grid-cols-2 xs:grid-rows-5 xs:grid-cols-3 w-full h-[900px] lg:h-[1500px] gap-4 sm:gap-5">
 

@@ -1,15 +1,30 @@
+import { motion, useAnimation, useVelocity, useMotionValue, useTransform } from "framer-motion"
 import Image from "next/image"
 import { useEffect, useState } from "react"
+import { useInView } from "react-intersection-observer"
+
+const imgVariant = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7 }},
+  hidden: { opacity: 0, y: 100, transition: { duration: 0.7 }}
+}
+const tableVariant = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5 }},
+  hidden: { opacity: 0, y: 100, transition: { duration: 0.7 }}
+}
+
 
 export function WorkingHours() {
-  
+  const controlImage = useAnimation()
+  const controlTable = useAnimation()
+  const [ref, inViewAbout] = useInView()
+
   const [working, setWorking] = useState(false)
-  
+
   useEffect(() => {
     const date = new Date()
     const day = date.getDay() //0 até 6
     const hours = date.getUTCHours() //0 até 24
-    
+
     switch (day) {
       case 1: //seg
       case 2: //ter
@@ -35,16 +50,40 @@ export function WorkingHours() {
     }
   }, [])
 
+  useEffect(() => {
+    if (inViewAbout) {
+      controlImage.start("visible")
+      controlTable.start("visible")
+    } else {
+      controlImage.start("hidden")
+      controlTable.start("hidden")
+    }
+  }, [controlImage, inViewAbout])
+
+
   return (
     <section className="flex items-center mb-24">
 
-      <div className="hidden md:block flex-1 text-center">
+      <motion.div
+        initial="hidden"
+        ref={ref}
+        animate={controlImage}
+        variants={imgVariant}
+        className="hidden md:block flex-1 text-center"
+
+      >
         <div className="relative md:h-[100vh] max-h-[800px] max-w-[500px]">
           <Image src="/img-horas-trabalhadas.jpg" alt="img" fill />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="flex-1 max-w-[550px] text-center sm:text-start">
+      <motion.div
+       initial="hidden"
+       ref={ref}
+       animate={controlTable}
+       variants={tableVariant}
+      className="flex-1 max-w-[550px] text-center sm:text-start"
+      >
         <h2 className="text-title">
           {working ? 'estamos abertos!' : 'fechados no momento...'}
         </h2>
@@ -76,7 +115,7 @@ export function WorkingHours() {
           className="w-full sm:w-fit bg-bg-primary hover:bg-button-primary text-contrast transition-all duration-300 mt-4">
           marcar
         </button>
-      </div>
+      </motion.div>
     </section>
   )
 }

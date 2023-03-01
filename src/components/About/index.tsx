@@ -5,11 +5,11 @@ export function About() {
   const cards = [
     {
       img: '/topics/1.jpg',
-      text: 'Extensão de silhos',
+      text: 'Extensão de cílios',
     },
     {
       img: '/topics/2.jpg',
-      text: 'Laminação de silhos',
+      text: 'Laminação de cílios',
     },
     {
       img: '/topics/3.jpg',
