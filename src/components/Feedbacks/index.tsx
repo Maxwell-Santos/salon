@@ -7,7 +7,7 @@ export function Feedbacks() {
 
   return (
     <section className="text-center py-32">
-      <h2 className="mb-10">feedbacks</h2>
+      <h2 className="mb-10">Feedbacks</h2>
 
       <div className="swiper-feedbacks max-w-[650px] mx-auto">
         <Swiper

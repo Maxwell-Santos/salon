@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { motion, useAnimation } from 'framer-motion'
-import { useEffect, useMemo } from "react";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 const variant1 = {
@@ -48,7 +48,7 @@ export function ProfessionalTeam() {
           />
 
           <div className="people-info">
-            <h3>LUIZA ANDRADE</h3>
+            <h3>Luiza Andrade</h3>
           </div>
 
         </motion.div>
@@ -67,7 +67,7 @@ export function ProfessionalTeam() {
           />
 
           <div className="people-info">
-            <h3>JOANA ALMEIDA</h3>
+            <h3>Joana Almeida</h3>
           </div>
 
         </motion.div>
@@ -86,7 +86,7 @@ export function ProfessionalTeam() {
           />
 
           <div className="people-info">
-            <h3>JULIA LINDONNETI</h3>
+            <h3>Julia Lindonneti</h3>
           </div>
 
         </motion.div>

@@ -1,4 +1,4 @@
-import { motion, useAnimation, useVelocity, useMotionValue, useTransform } from "framer-motion"
+import { motion, useAnimation } from "framer-motion"
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import { useInView } from "react-intersection-observer"
@@ -85,7 +85,7 @@ export function WorkingHours() {
       className="flex-1 max-w-[550px] text-center sm:text-start"
       >
         <h2 className="text-title">
-          {working ? 'estamos abertos!' : 'fechados no momento...'}
+          {working ? 'Estamos abertos!' : 'Fechados no momento...'}
         </h2>
 
         <p className="text-lg text-primary/70 mt-5 mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ab, voluptate deserunt tempore ratione aspernatur officia explicabo fuga distinctio non.</p>

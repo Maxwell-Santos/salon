@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         primary: ['var(--lato-font)'],
+        secondary: ['var(--cursive-font)'],
       },
       backgroundColor: {
         'bg-primary': '#2c2c2c',
