@@ -22,7 +22,7 @@ export function MostPopular() {
   }, [control, inView])
 
   return (
-    <section className="flex gap-8 py-32 max-[680px]:flex-col">
+    <section className="flex gap-8 py-32 max-[680px]:flex-col overflow-x-hidden">
       <motion.div
         className="flex-1"
         ref={ref}
