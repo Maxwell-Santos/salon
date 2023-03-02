@@ -12,7 +12,8 @@ module.exports = {
       backgroundColor: {
         'bg-primary': '#2c2c2c',
         'bg-secondary': '#fafafa',
-        'button-primary': '#fbbaa1'
+        'button-primary': '#fbbaa1',
+        'loading-screen': '#fbbaa1'
       },
       textColor: {
         title: '#fbbaa1',

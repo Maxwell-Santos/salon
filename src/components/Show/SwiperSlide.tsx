@@ -9,7 +9,7 @@ export function SwiperSlideComponent({ img, description, title }: SwiperSlideCom
 
   return (
     <div className="relative w-full h-[55vh] sm:h-[100vh] max-h-[700px]">
-      <Image src={img} alt={"slide"} fill />
+      <Image src={img} alt={"slide"} fill priority />
       <div className="slide-content">
         <h2 className="drop-shadow-sm font-primary uppercase">{title}</h2>
         <p>{description}</p>
