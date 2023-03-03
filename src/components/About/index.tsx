@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { ButtonContact } from "../ButtonContact"
 
 export function About() {
 
@@ -31,7 +32,7 @@ export function About() {
           <p className="py-7 text-base sm:text-lg text-paragraph">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero quas maiores impedit fugit nesciunt, eos laudantium. Voluptatem consequatur, expedita dicta neque perferendis rerum non illum ab incidunt voluptates, dolorem culpa.
           </p>
-          <button className="w-full sm:w-fit hover:bg-button-primary hover:border-[#fbbaa1] border border-white transition-all">Veja mais</button>
+          <ButtonContact secondary text="marcar"/>
         </div>
 
       </div>

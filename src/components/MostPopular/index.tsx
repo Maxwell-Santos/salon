@@ -1,6 +1,7 @@
 import { motion, useAnimation } from 'framer-motion'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
+import { ButtonContact } from '../ButtonContact'
 
 const titleVariant = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.8 }},
@@ -83,10 +84,8 @@ export function MostPopular() {
             <span className="block">Duration 1.5-2 hours</span>
           </div>
         </div>
-        <button
-          className="w-full sm:w-fit bg-bg-primary hover:bg-button-primary text-contrast transition-all duration-300 mt-4 self-start">
-          marcar
-        </button>
+        
+        <ButtonContact text="marcar"/>
       </motion.div>
     </section>
   )

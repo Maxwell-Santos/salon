@@ -2,6 +2,7 @@ import { motion, useAnimation } from "framer-motion"
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import { useInView } from "react-intersection-observer"
+import { ButtonContact } from "../ButtonContact"
 
 const imgVariant = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.7 }},
@@ -30,17 +31,17 @@ export function WorkingHours() {
       case 2: //ter
       case 3: //qua
       case 4: //qui
-        if (hours > 9 && hours < 19) setWorking(true)
+        if (hours > 9 || hours < 19) setWorking(true)
         else setWorking(false)
         break;
 
       case 5: //sex
-        if (hours > 9 && hours < 17) setWorking(true)
+        if (hours > 9 || hours < 17) setWorking(true)
         else setWorking(false)
         break;
 
       case 6: //sáb
-        if (hours > 10 && hours < 17) setWorking(true)
+        if (hours > 10 || hours < 17) setWorking(true)
         else setWorking(false)
         break;
 
@@ -111,10 +112,7 @@ export function WorkingHours() {
           </tbody>
         </table>
 
-        <button
-          className="w-full sm:w-fit bg-bg-primary hover:bg-button-primary text-contrast transition-all duration-300 mt-4">
-          marcar
-        </button>
+        <ButtonContact text="marcar"/>
       </motion.div>
     </section>
   )
