@@ -19,36 +19,36 @@ export function Feedbacks() {
         >
           <SwiperSlide>
             <p>
-              "Adorei meu corte de cabelo! O profissional foi muito atencioso e
-              me ajudou a escolher o estilo perfeito para mim."
+            &ldquo;Adorei meu corte de cabelo! O profissional foi muito atencioso e
+              me ajudou a escolher o estilo perfeito para mim.&rdquo;
             </p>
           </SwiperSlide>
 
           <SwiperSlide>
             <p>
-              "Meu tratamento facial foi maravilhoso! A esteticista utilizou
-              produtos naturais e me deixou com a pele radiante."
+              &ldquo;Meu tratamento facial foi maravilhoso! A esteticista utilizou
+              produtos naturais e me deixou com a pele radiante.&rdquo;
             </p>
           </SwiperSlide>
 
           <SwiperSlide>
             <p>
-              "Meu cabelo estava muito danificado e sem vida, mas depois do
+              &ldquo;Meu cabelo estava muito danificado e sem vida, mas depois do
               tratamento capilar que fiz no salão, ele ficou incrível! Recomendo
-              muito."
+              muito.&rdquo;
             </p>
           </SwiperSlide>
           <SwiperSlide>
             <p>
-              "Fui para o salão para fazer uma maquiagem para uma festa e fiquei
+              &ldquo;Fui para o salão para fazer uma maquiagem para uma festa e fiquei
               muito satisfeita com o resultado! A maquiadora foi muito
-              habilidosa e paciente."
+              habilidosa e paciente.&rdquo;
             </p>
           </SwiperSlide>
           <SwiperSlide>
             <p>
-              "O salão é lindo e confortável, e os serviços são de primeira
-              qualidade. Sempre saio de lá me sentindo renovada e confiante."
+              &ldquo;O salão é lindo e confortável, e os serviços são de primeira
+              qualidade. Sempre saio de lá me sentindo renovada e confiante.&rdquo;
             </p>
           </SwiperSlide>
         </Swiper>
