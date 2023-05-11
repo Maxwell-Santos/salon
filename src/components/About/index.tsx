@@ -27,10 +27,11 @@ export function About() {
 
       <div className="max-w-[1000px] w-full mx-auto flex flex-wrap items-center justify-center gap-10 pt-10 md:pt-20 md:gap-20">
 
-        <div className="text-center flex-1 max-w-[500px] w-full">
+        <div className="text-center flex-1 max-w-[700px] w-full">
           <h2 className="text-contrast">O que fazemos</h2>
-          <p className="py-7 text-base sm:text-lg text-paragraph">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero quas maiores impedit fugit nesciunt, eos laudantium. Voluptatem consequatur, expedita dicta neque perferendis rerum non illum ab incidunt voluptates, dolorem culpa.
+          <p className="py-7 mb-3 text-base sm:text-lg text-paragraph">
+            Nós trabalhamos com melhora de autoestima, e nisso inclui o melhor tratamento de: cortes de cabelo modernos, limpeza de pele, esfoliação, massagem e hidratação, maquiagem para ocasiões especiais ou para o dia a dia, design de sobrancelhas e cílios e penteados para festas e eventos especiais.
+
           </p>
           <ButtonContact secondary text="marcar"/>
         </div>
@@ -45,7 +46,7 @@ export function About() {
             className={`relative h-[400px] w-[400px] md:w-[300px] flex items-end group cursor-pointer`}
             >
 
-              <div className="relative z-10 ml-4 mb-20 group-hover:-translate-y-4 transition-all duration-500">
+              <div className="relative z-10 pl-4 pb-10 p-2 group-hover:pb-14 transition-all duration-500 bg-gradient-to-t from-[#2c2c2c]">
                 <h4 className="uppercase text-4xl font-extrabold">{item.text}</h4>
               </div>
               <Image

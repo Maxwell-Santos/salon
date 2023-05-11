@@ -13,7 +13,7 @@
     @apply object-cover w-full h-full
   }
   h2 {
-    @apply text-5xl text-primary font-secondary
+    @apply text-5xl sm:text-6xl text-primary font-secondary
   }
   button {
     @apply p-4 px-8 uppercase text-base
@@ -32,10 +32,17 @@
   }
 
   form .container-input{
-    @apply w-full mt-6
+    @apply w-full mt-6 first:mt-0
+  }
+  form .icon{
+    @apply text-[#b9b9b9] absolute left-2 top-1/2 -translate-y-1/2
   }
   form .container-input label{
-    @apply block mb-2 uppercase
+    @apply block mb-2 uppercase text-zinc-600
+  }
+
+  #shadow-host-companion{
+    @apply p-0 m-0
   }
 }
 
@@ -74,7 +81,7 @@
 
   /*serviços mais populares*/
   .container {
-    @apply w-full flex-1 mb-4
+    @apply w-full flex-1 mb-8 last:mb-0
   }
     
   .container-header {
@@ -84,7 +91,7 @@
     @apply last:text-table-contrast
   }
   .container-info {
-    @apply text-primary/70
+    @apply text-primary/70 max-w-[90%] text-lg leading-tight
   }
   /*serviços mais populares*/
 

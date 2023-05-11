@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Header } from 'src/components/Header'
 import { Show } from 'src/components/Show'
 import { About } from 'src/components/About'
 import { WorkingHours } from 'src/components/WorkingHours'
@@ -22,7 +21,6 @@ export default function Home() {
       </Head>
 
       <div className='relative'>
-        <Header />
         <Show />
       </div>
 

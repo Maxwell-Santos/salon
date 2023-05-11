@@ -29,7 +29,7 @@ export function ProfessionalTeam() {
 
       <div className="text-center">
         <h2>Nosso time de profissionais</h2>
-        <p className="max-w-[500px] mx-auto my-10 text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid molestiae harum tempore debitis, dignissimos cumque magni? Nobis inventore porro provident in cum</p>
+        <p className="max-w-[700px] mx-auto my-10 text-lg text-primary/70">Nossos profissionais são altamente qualificados e experientes na área de beleza e cuidados pessoais. Eles estão sempre atualizados sobre as últimas tendências e técnicas, e trabalham com produtos de alta qualidade para garantir que nossos clientes recebam os melhores serviços possíveis</p>
       </div>
 
       <div ref={ref} className="flex flex-col sm:flex-row h-[1500px] max-[650px]:max-w-[400px] w-full gap-5 md:h-[90vh] mx-auto">

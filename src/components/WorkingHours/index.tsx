@@ -61,7 +61,6 @@ export function WorkingHours() {
     }
   }, [controlImage, inViewAbout])
 
-
   return (
     <section className="flex items-center mb-24">
 
@@ -89,7 +88,10 @@ export function WorkingHours() {
           {working ? 'Estamos abertos!' : 'Fechados no momento...'}
         </h2>
 
-        <p className="text-lg text-primary/70 mt-5 mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ab, voluptate deserunt tempore ratione aspernatur officia explicabo fuga distinctio non.</p>
+        <p className="text-lg text-primary/70 mt-5 mb-10">
+          Não tem tempo ruim, quando é hora de se arrumar. Melhor ainda quando você marca com a gente para te deixar incrível.
+          Abaixo são os horários que estamos disponíveis para você.
+        </p>
 
         <table className="table-hours">
           <tbody>

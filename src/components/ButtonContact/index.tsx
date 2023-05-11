@@ -14,7 +14,7 @@ export function ButtonContact({secondary, text, show}:ButtonContactProps) {
    ${secondary ? 
     'border border-white hover:bg-button-primary bg-none' : 
     'bg-bg-primary hover:bg-button-primary block self-start'} transition-all w-full sm:w-fit duration-300 text-white uppercase mt-4
-    ${show && 'hover:bg-transparent bg-button-primary border border-transparent hover:border-white'}
+    ${show && 'hover:bg-transparent bg-button-primary border border-transparent hover:border-white text-center'}
     `}
    > 
    {text}
